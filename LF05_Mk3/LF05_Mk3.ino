@@ -7,7 +7,7 @@ int l_sensor;
 int c_sensor;
 int r_sensor;
 
-unsigned long counter;
+unsigned int counter;
 
 const int l_s = 820;
 

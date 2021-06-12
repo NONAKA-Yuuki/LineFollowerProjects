@@ -10,3 +10,9 @@ the process has been explained below.
 Arduino 1.8.13
 
 ## Setup
+- Seeeduino xiao <- recommended!
+- DRV8835
+- LBR127HLD * 3
+- 6V DC gearbox motor *2 https://akizukidenshi.com/catalog/g/gM-15140/
+- 1kΩ
+- 

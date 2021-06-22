@@ -48,38 +48,38 @@ if((l_sensor < l_s)&&(c_sensor < l_s)&&(r_sensor < l_s)){ninetyDeg();}         /
 
 void forword() {
   counter = 0;
-  digitalWrite(l_in1, HIGH);
-  digitalWrite(r_in1, HIGH);
-  digitalWrite(l_in2, LOW);
-  digitalWrite(r_in2, LOW);
+  digitalWrite(l_in2, HIGH);
+  digitalWrite(r_in2, HIGH);
+  digitalWrite(l_in1, LOW);
+  digitalWrite(r_in1, LOW);
 }
 
 void turnRight() {
   counter = 0;
-  digitalWrite(l_in1, HIGH);
-  digitalWrite(r_in1, HIGH);
-  digitalWrite(l_in2, LOW);
+  digitalWrite(l_in2, HIGH);
   digitalWrite(r_in2, HIGH);
+  digitalWrite(l_in1, LOW);
+  digitalWrite(r_in1, HIGH);
 }
 
 void turnLeft() {
   counter = 0;
-  digitalWrite(l_in1, HIGH);
-  digitalWrite(r_in1, HIGH);
   digitalWrite(l_in2, HIGH);
-  digitalWrite(r_in2, LOW);
+  digitalWrite(r_in2, HIGH);
+  digitalWrite(l_in1, HIGH);
+  digitalWrite(r_in1, LOW);
 }
 
 void ninetyDeg() {
-  if(++counter > 5500) {
-    digitalWrite(l_in1, HIGH);
-    digitalWrite(r_in1, LOW);
-    digitalWrite(l_in2, LOW);
-    digitalWrite(r_in2, HIGH);
-  } else {
-    digitalWrite(l_in1, LOW);
-    digitalWrite(r_in1, HIGH);
+  if(++counter > 8000) {
     digitalWrite(l_in2, HIGH);
     digitalWrite(r_in2, LOW);
+    digitalWrite(l_in1, LOW);
+    digitalWrite(r_in1, HIGH);
+  } else {
+    digitalWrite(l_in2, LOW);
+    digitalWrite(r_in2, HIGH);
+    digitalWrite(l_in1, HIGH);
+    digitalWrite(r_in1, LOW);
   }
 }
